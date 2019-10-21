@@ -6,6 +6,7 @@
     .centering();
     .custom-layout(column, center, center);
     background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border-color;
 
     @media @mobile {
         max-width: 100%;
@@ -14,11 +15,24 @@
 
     .nav-logo{
         .padding-top();
-        font-size: 3.2rem;
+        font-size: 4rem;
 
         @media @mobile {
             font-size: 4.5rem;
         }
+
+        h1{
+            background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+            background-size: cover;
+            color: transparent;
+            -moz-background-clip: text;
+            -webkit-background-clip: text;
+            text-transform: uppercase;
+            font-size: 120px;
+            line-height: .75;
+            margin: 10px 0;
+        }
+
     }
     .nav-bar{
         display: flex;

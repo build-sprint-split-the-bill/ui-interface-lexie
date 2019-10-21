@@ -142,7 +142,7 @@ html,
 body {
   font-family: 'ZCOOL XiaoWei', serif;
   color: #5E6164;
-  background-color: gainsboro;
+  background-color: antiquewhite;
 }
 h1,
 h2,
@@ -163,7 +163,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -174,7 +173,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-color: #F6F6F6;
+  background-color: oldlace;
+  border-bottom: 1px solid sienna;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -184,12 +184,23 @@ p {
 }
 .nav-container .nav-logo {
   padding: 1%;
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 @media (max-width: 500px) {
   .nav-container .nav-logo {
     font-size: 4.5rem;
   }
+}
+.nav-container .nav-logo h1 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: 0.75;
+  margin: 10px 0;
 }
 .nav-container .nav-bar {
   display: flex;
@@ -230,6 +241,13 @@ footer {
   /* Add margins to the checkbox */
   /* Style the submit button */
 }
+.home .intro {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid sienna;
+}
 .home .intro img {
   width: 100%;
 }
@@ -238,8 +256,18 @@ footer {
     border-radius: 5px;
   }
 }
+.home .intro .introtosplit {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 .home .intro h2 {
+  width: 100%;
   padding: 15px;
+  text-align: center;
+  margin-bottom: 5%;
   position: relative;
   /** text-transform: uppercase; **/
   letter-spacing: 4px;
