@@ -278,7 +278,7 @@ footer {
   /** text-transform: uppercase; **/
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg, #000, #fff, #000);
+  background: linear-gradient(90deg, darkolivegreen, goldenrod, forestgreen);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 5s linear infinite;
@@ -296,56 +296,94 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .slideshow-container {
-  max-width: 1000px;
+.home .whySplit {
+  margin-bottom: 5%;
+  margin-top: -5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.home html,
+.home body {
+  height: 100%;
+  font-weight: 800;
+}
+.home body {
+  background: #030321;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+.home svg {
+  display: block;
+  font: 10.5em 'Noticia Text', serif;
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+.home .text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+.home .text-copy:nth-child(1) {
+  stroke: darkolivegreen;
+  animation-delay: -1;
+}
+.home .text-copy:nth-child(2) {
+  stroke: springgreen;
+  animation-delay: -2s;
+}
+.home .text-copy:nth-child(3) {
+  stroke: seagreen;
+  animation-delay: -3s;
+}
+.home .text-copy:nth-child(4) {
+  stroke: goldenrod;
+  animation-delay: -4s;
+}
+.home .text-copy:nth-child(5) {
+  stroke: olivedrab;
+  animation-delay: -5s;
+}
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+.home html,
+.home body {
+  margin: 0;
+  padding: 0;
+}
+.home .slider {
+  width: 100%;
+  margin: 2em auto;
+  padding-bottom: 9%;
+  border-bottom: 1px solid sienna;
+  padding-top: 1%;
+  border-top: 1px solid sienna;
+  display: flex;
+  justify-content: center;
+}
+.home .slider-wrapper {
+  width: 60%;
+  height: 500px;
   position: relative;
-  margin: auto;
-  padding-bottom: 15%;
 }
-.home .mySlides {
-  display: none;
-  height: 400px;
-}
-.home .prev,
-.home .next {
-  cursor: pointer;
+.home .slide {
+  float: left;
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #222428;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 3s linear;
 }
-.home .next {
-  right: -50px;
-  border-radius: 3px 3px 3px 3px;
-}
-.home .prev {
-  left: -50px;
-  border-radius: 3px 3px 3px 3px;
-}
-.home .prev:hover,
-.home .next:hover {
-  color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.home .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.home .active,
-.home .dot:hover {
-  background-color: #717171;
+.home .slider-wrapper > .slide:first-child {
+  opacity: 1;
 }
 .home .visit-planets {
   padding: 15px;

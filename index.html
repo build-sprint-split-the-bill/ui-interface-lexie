@@ -30,7 +30,7 @@
       <div class="nav-bar">
         <nav>
           <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="about.html">About</a>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
           <a href="#">Partners</a>
@@ -52,72 +52,43 @@
         <p>Figuring out how to split the bill has never been easier. Split is here to help you keep track of who owes you money for that last trip to that new Tapas bar or French tasting menu restaraunt. A one-stop app that allows you to charge your friends an even split of the bill. We have partnered with many local restaurants in major metropolises around the US. We have launched in Los Angeles, Portland, Seattle, and New York so far.</p>
       </div>
     </header>
-
-    <!--
-    <section id="slideshowforlocalfood">
-      <div><img class = "mySlides" src="img/Le Pigeon Inside.jpg"></div>
-      <div><img class = "mySlides" src='img/Chef Gabriel.jpg'></div>
-      <div><img class ="mySlides" src="img/Long Image of Food.jpg"></div>
-      <div><img class="mySlides" src="img/tuskexterior.jpg"></div>
-      <div><img class="mySlides" src="img/tusk-pdx-restaurant-bartenders.jpg"></div>
-      <div><img class="mySlides" src="img/tusk food.jpg"></div>
-    </section>
-   -->
-
-   <div class="slideshow-container">
-      <div class="slideshow-inner">
-        <div class="mySlides fade">
-          <img  src='img/tuskexterior.jpg' style='width: 100%;' alt="tusk dusk neon light exterior"/>
-          <!-- <div class="text">Tusk PDX</div> -->
+    <section class="whySplit">
+        <div>
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">Why SPLIT?</text>
+                </symbol>
+              
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
         </div>
-        <div class="mySlides fade">
-          <img  src='img/tusk-pdx-restaurant-bartenders.jpg' style='width: 100%;' alt="bartenders marble bar"/>
-          <!-- <div class="text">Meet Tusk</div> -->
-        </div>
-        <div class="mySlides fade">
-          <img  src='img/tusk food.jpg' style='width: 100%;' alt="tusk food hummus pita"/>
-          <!-- <div class="text">Tusk's Creations</div> -->
-        </div>
-        <div class="mySlides fade">
-        <img  src='img/Le Pigeon Inside.jpg' style='width: 100%;' alt="le pigeon interior"/>
-          <!-- <div class="text">Inside Le Pigeon</div> -->
-        </div>
-        <div class="mySlides fade">
-          <img  src='img/Chef Gabriel.jpg' style='width: 100%;' alt="chef Gabriel Rucker"/>
-            <!-- <div class="text">Inside Le Pigeon</div> -->
-          </div>
-        <div class="mySlides fade">
-          <img  src='img/le pigeon dish.jpg' style='width: 100%;' alt="le pigeon green seasonal dish"/>
-            <!-- <div class="text">Le Pigeon Creation/div> -->
-        </div>
-          <div class="mySlides fade">
-            <img  src='img/le pigeon burger.jpg' style='width: 100%;' alt="le pigeon burger"/>
-            <!-- <div class="text">Le Pigeon burger</div> -->
-          </div>
-        </div>
-          <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-          <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-        </div>
-        <br/>
-        <div style='text-align: center;'>
-          <span class="dot" onclick='currentSlide(1)'></span>
-          <span class="dot" onclick='currentSlide(2)'></span>
-          <span class="dot" onclick='currentSlide(3)'></span>
-          <span class="dot" onclick='currentSlide(4)'></span>
-          <span class="dot" onclick='currentSlide(5)'></span>
-          <span class="dot" onclick='currentSlide(6)'></span>
-          <span class="dot" onclick='currentSlide(7)'></span>
-        </div>
+        <div>
+          <p>The modern dilemma: too many friends and too many group outings. You're out with a group and they want to split the bill equally. Many restaurants will charge you extra for splitting with more than two credit cards. Sometimes, you might get the stinkeye from the waiter who will complain it was not part of his or her role to know how to calculate the math on splitting bills among "X" amount of friends. If a restaurant has a max amount of times a bill can be split, more ofthen than not, one friend will end up paying the bill and asking everyone to just pay them back, but what happens when you have that one shady friend who will try to reason that he or she had already paid you back?</p>
+          <br>
+          <p>SPLIT is here to help you solve your problems and prevent any possible friendship rifts that might come across just because Millenials are that forgetful. When the one person who pays the bill logs in to the app. you will be prompted to add the friends who were at the meal into the bill. The local restaurants that are working with SPLIT will have electronically sent the payee the bill already and our app will calculate the split bill evenly for all members of the party. The friends will be notified immedaitely to 'OK' this transaction and money will be pulled out of their bank accounts directly to be sent to the friend who had paid. There will be daily reminders to those who have yet to pay back their friends to ensure that money is sent in a prompt manner, preventing any awkward interactions for any future group hangouts.</p>
       </div>
-
-    <!-- <section class="visit-planets">
-     
-      <h3>Can We Visit Planets?</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
     </section>
+
+
+    <div class="slider" id="main-slider"><!-- outermost container element -->
+      <div class="slider-wrapper"><!-- innermost wrapper element -->
+        <img src='img/tuskexterior.jpg' alt="First" class="slide" />
+        <img src='img/tusk-pdx-restaurant-bartenders.jpg' alt="Second" class="slide" />
+        <img src='img/tusk food.jpg' alt="Third" class="slide" />
+        <img src='img/Le Pigeon Inside.jpg' alt="Fourth" class="slide" />
+        <img src='img/Chef Gabriel.jpg' alt="Fifth" class="slide" />
+        <img src='img/le pigeon dish.jpg' alt="Sixth" class="slide" />
+        <img src='img/le pigeon burger.jpg' alt="Seventh" class="slide" />
+      </div>
+    </div>	
+
+    <!-- 
     
     <section class="walk">
       <div class="walk-text">
