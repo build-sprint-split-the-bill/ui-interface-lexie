@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet"> <!-- same as above-->
 
   <link href="css/index.css" rel="stylesheet">
+  <script src="slideshowforfood.js"></script>
 
   <script src="https://kit.fontawesome.com/ca08e59ea1.js" crossorigin="anonymous"></script> <!--for icon-->
 
@@ -52,13 +53,64 @@
       </div>
     </header>
 
-    <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+    <!--
+    <section id="slideshowforlocalfood">
+      <div><img class = "mySlides" src="img/Le Pigeon Inside.jpg"></div>
+      <div><img class = "mySlides" src='img/Chef Gabriel.jpg'></div>
+      <div><img class ="mySlides" src="img/Long Image of Food.jpg"></div>
+      <div><img class="mySlides" src="img/tuskexterior.jpg"></div>
+      <div><img class="mySlides" src="img/tusk-pdx-restaurant-bartenders.jpg"></div>
+      <div><img class="mySlides" src="img/tusk food.jpg"></div>
     </section>
-   
-    <section class="visit-planets">
+   -->
+
+   <div class="slideshow-container">
+      <div class="slideshow-inner">
+        <div class="mySlides fade">
+          <img  src='img/tuskexterior.jpg' style='width: 100%;' alt="tusk dusk neon light exterior"/>
+          <!-- <div class="text">Tusk PDX</div> -->
+        </div>
+        <div class="mySlides fade">
+          <img  src='img/tusk-pdx-restaurant-bartenders.jpg' style='width: 100%;' alt="bartenders marble bar"/>
+          <!-- <div class="text">Meet Tusk</div> -->
+        </div>
+        <div class="mySlides fade">
+          <img  src='img/tusk food.jpg' style='width: 100%;' alt="tusk food hummus pita"/>
+          <!-- <div class="text">Tusk's Creations</div> -->
+        </div>
+        <div class="mySlides fade">
+        <img  src='img/Le Pigeon Inside.jpg' style='width: 100%;' alt="le pigeon interior"/>
+          <!-- <div class="text">Inside Le Pigeon</div> -->
+        </div>
+        <div class="mySlides fade">
+          <img  src='img/Chef Gabriel.jpg' style='width: 100%;' alt="chef Gabriel Rucker"/>
+            <!-- <div class="text">Inside Le Pigeon</div> -->
+          </div>
+        <div class="mySlides fade">
+          <img  src='img/le pigeon dish.jpg' style='width: 100%;' alt="le pigeon green seasonal dish"/>
+            <!-- <div class="text">Le Pigeon Creation/div> -->
+        </div>
+          <div class="mySlides fade">
+            <img  src='img/le pigeon burger.jpg' style='width: 100%;' alt="le pigeon burger"/>
+            <!-- <div class="text">Le Pigeon burger</div> -->
+          </div>
+        </div>
+          <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+          <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+        </div>
+        <br/>
+        <div style='text-align: center;'>
+          <span class="dot" onclick='currentSlide(1)'></span>
+          <span class="dot" onclick='currentSlide(2)'></span>
+          <span class="dot" onclick='currentSlide(3)'></span>
+          <span class="dot" onclick='currentSlide(4)'></span>
+          <span class="dot" onclick='currentSlide(5)'></span>
+          <span class="dot" onclick='currentSlide(6)'></span>
+          <span class="dot" onclick='currentSlide(7)'></span>
+        </div>
+      </div>
+
+    <!-- <section class="visit-planets">
      
       <h3>Can We Visit Planets?</h3>
     
@@ -86,7 +138,7 @@
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
-    </section>
+    </section> -->
 
     <footer>
       <p><i class="far fa-copyright"></i> Split 2019</p>
