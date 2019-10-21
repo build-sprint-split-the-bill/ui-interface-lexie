@@ -198,7 +198,7 @@ p {
   -moz-background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: 120px;
+  font-size: 12rem;
   line-height: 0.75;
   margin: 10px 0;
 }
@@ -247,6 +247,12 @@ footer {
   justify-content: center;
   align-content: center;
   border-bottom: 1px solid sienna;
+}
+.home .intro .lepigeonheaderimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .home .intro img {
   width: 100%;
