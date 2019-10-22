@@ -269,7 +269,7 @@ footer {
 @media (max-width: 500px) {
   .home .intro {
     flex-direction: column-reverse;
-    margin-left: 17%;
+    margin-left: 5%;
     padding-bottom: 3%;
   }
 }
@@ -287,10 +287,12 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  margin-left: 20%;
 }
 @media (max-width: 500px) {
   .home .intro img {
     border-radius: 5px;
+    width: 125%;
   }
 }
 .home .intro .introtosplit {
@@ -302,7 +304,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro .introtosplit {
-    width: 80%;
+    width: 100%;
   }
 }
 .home .intro .introtosplit p {
@@ -375,6 +377,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .whySplit .log-in-butt {
+    padding-top: 5%;
+  }
+}
 .home .whySplit .log-in-butt button {
   display: block;
   background-color: darkolivegreen;
@@ -408,6 +415,11 @@ footer {
   width: 960px;
   height: 300px;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home svg {
+    width: 100%;
+  }
 }
 .home .text-copy {
   fill: none;
