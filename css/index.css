@@ -487,6 +487,11 @@ audio {
 .home footer {
   margin-top: 40%;
 }
+.home .fa-volume-mute {
+  color: black;
+  font-size: 2.5rem;
+  padding-left: 0.5%;
+}
 audio {
   display: none;
 }
@@ -731,4 +736,9 @@ audio {
   color: darkolivegreen;
   font-size: 4rem;
   padding-left: 40%;
+}
+.container-home .fa-volume-mute {
+  color: black;
+  font-size: 2.5rem;
+  padding-left: 0.5%;
 }
