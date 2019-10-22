@@ -265,6 +265,27 @@ footer {
 .home .intro .introtosplit p {
   font-size: 2rem;
 }
+.home .intro .introtosplit .sign-up-butt {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.home .intro .introtosplit .sign-up-butt button {
+  display: block;
+  background-color: darkolivegreen;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Noticia Text', serif;
+}
+.home .intro .introtosplit .sign-up-butt button:hover {
+  background-color: white;
+  color: darkolivegreen;
+}
 .home .intro h2 {
   width: 100%;
   padding: 15px;
@@ -305,6 +326,29 @@ footer {
 }
 .home .whySplit p {
   font-size: 2rem;
+}
+.home .whySplit .log-in-butt {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.home .whySplit .log-in-butt button {
+  display: block;
+  background-color: darkolivegreen;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  height: 55px;
+  font-family: 'Noticia Text', serif;
+  font-size: 3rem;
+}
+.home .whySplit .log-in-butt button:hover {
+  background-color: white;
+  color: darkolivegreen;
 }
 .home html,
 .home body {

@@ -34,7 +34,18 @@
       p{
         font-size: 2rem;
       }
-    }
+
+      .sign-up-butt{
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+
+        button{
+          .custom-butt(@butt-bg-color: darkolivegreen, @width: 200px, @txt-color: white);
+          font-family: @font-header;
+        }//closes button
+      }//closes button div
+    }//closes intro to split section
 
     h2 {
       width: 100%;
@@ -84,11 +95,18 @@
       font-size: 2rem;
     }
 
-    // button{
-    //   display: flex;
-    //   justify-content: center;
-    //   .custom-butt(@bg-color: #22283A, @width: 100px, @txt-color: white);
-    //   font-family: 'Noticia Text', serif;
+    .log-in-butt{
+      padding-top: 2%;
+      display: flex;
+      justify-content: center;
+
+      button{
+        .custom-butt(@butt-bg-color: darkolivegreen, @width: 300px, @txt-color: white);
+        height: 55px;
+        font-family: @font-header;
+        font-size: 3rem;
+      }//closes button
+    }//closes button div
 
     //   @media @mobile {
     //     .custom-butt(@bg-color: #22283A, @width: 467.5px, @txt-color: white);
