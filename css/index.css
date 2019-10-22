@@ -265,6 +265,7 @@ footer {
   flex-direction: row-reverse;
   justify-content: center;
   align-content: center;
+  margin-left: 3%;
 }
 @media (max-width: 500px) {
   .home .intro {
@@ -482,6 +483,9 @@ footer {
 }
 .home footer {
   margin-top: 40%;
+}
+audio {
+  display: none;
 }
 .container-home .intro {
   padding: 1%;
