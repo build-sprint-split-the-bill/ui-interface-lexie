@@ -14,7 +14,39 @@
     }
 
 
+    #meet-the-team-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
 
+        h1{
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            font-size: 4rem;
+        }
+        
+        .team-intros{
+            display: flex;
+            justify-content: space-between;
+            //align-content: space-between;
+
+            .project-lead, .ui-1, .ui-2, .react1, .react2-1, .react2-2, .backend{
+                width: 13%;
+                border: 3px solid black;
+                border-radius: 5px;
+                line-height: 1.2;
+
+                h2{
+                    font-size: 3rem;
+                }
+                h3{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 
     .fa-github-square{
         color: darkolivegreen;

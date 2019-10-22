@@ -496,6 +496,52 @@ footer {
     border-radius: 5px;
   }
 }
+.container-home #meet-the-team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.container-home #meet-the-team-container h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 4rem;
+}
+.container-home #meet-the-team-container .team-intros {
+  display: flex;
+  justify-content: space-between;
+}
+.container-home #meet-the-team-container .team-intros .project-lead,
+.container-home #meet-the-team-container .team-intros .ui-1,
+.container-home #meet-the-team-container .team-intros .ui-2,
+.container-home #meet-the-team-container .team-intros .react1,
+.container-home #meet-the-team-container .team-intros .react2-1,
+.container-home #meet-the-team-container .team-intros .react2-2,
+.container-home #meet-the-team-container .team-intros .backend {
+  width: 13%;
+  border: 3px solid black;
+  border-radius: 5px;
+  line-height: 1.2;
+}
+.container-home #meet-the-team-container .team-intros .project-lead h2,
+.container-home #meet-the-team-container .team-intros .ui-1 h2,
+.container-home #meet-the-team-container .team-intros .ui-2 h2,
+.container-home #meet-the-team-container .team-intros .react1 h2,
+.container-home #meet-the-team-container .team-intros .react2-1 h2,
+.container-home #meet-the-team-container .team-intros .react2-2 h2,
+.container-home #meet-the-team-container .team-intros .backend h2 {
+  font-size: 3rem;
+}
+.container-home #meet-the-team-container .team-intros .project-lead h3,
+.container-home #meet-the-team-container .team-intros .ui-1 h3,
+.container-home #meet-the-team-container .team-intros .ui-2 h3,
+.container-home #meet-the-team-container .team-intros .react1 h3,
+.container-home #meet-the-team-container .team-intros .react2-1 h3,
+.container-home #meet-the-team-container .team-intros .react2-2 h3,
+.container-home #meet-the-team-container .team-intros .backend h3 {
+  font-size: 2rem;
+}
 .container-home .fa-github-square {
   color: darkolivegreen;
   font-size: 4rem;
