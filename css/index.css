@@ -496,6 +496,46 @@ footer {
     border-radius: 5px;
   }
 }
+.container-home #splitfounded {
+  margin: 2%;
+  line-height: 1.5;
+}
+.container-home #splitfounded h1 {
+  font-size: 5rem;
+}
+.container-home #splitfounded p {
+  font-size: 2.5rem;
+}
+.container-home #features {
+  margin: 2%;
+  line-height: 1.5;
+}
+.container-home #features h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.container-home .lists {
+  display: flex;
+  justify-content: space-between;
+}
+.container-home .lists .current-features-list,
+.container-home .lists .coming-soon-feat-list {
+  width: 48%;
+}
+.container-home .lists .current-features-list h3,
+.container-home .lists .coming-soon-feat-list h3 {
+  font-size: 4rem;
+}
+.container-home .lists .current-features-list ul,
+.container-home .lists .coming-soon-feat-list ul {
+  list-style-type: square;
+  margin-left: 3%;
+}
+.container-home .lists .current-features-list ul li,
+.container-home .lists .coming-soon-feat-list ul li {
+  font-size: 2rem;
+}
 .container-home #meet-the-team-container {
   display: flex;
   flex-direction: column;
@@ -523,6 +563,9 @@ footer {
   border: 3px solid black;
   border-radius: 5px;
   line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .container-home #meet-the-team-container .team-intros .project-lead h2,
 .container-home #meet-the-team-container .team-intros .ui-1 h2,
@@ -542,7 +585,20 @@ footer {
 .container-home #meet-the-team-container .team-intros .backend h3 {
   font-size: 2rem;
 }
+.container-home #meet-the-team-container .team-intros .project-lead img,
+.container-home #meet-the-team-container .team-intros .ui-1 img,
+.container-home #meet-the-team-container .team-intros .ui-2 img,
+.container-home #meet-the-team-container .team-intros .react1 img,
+.container-home #meet-the-team-container .team-intros .react2-1 img,
+.container-home #meet-the-team-container .team-intros .react2-2 img,
+.container-home #meet-the-team-container .team-intros .backend img {
+  width: 100%;
+}
+.container-home .fab {
+  text-align: center;
+}
 .container-home .fa-github-square {
   color: darkolivegreen;
   font-size: 4rem;
+  padding-left: 40%;
 }

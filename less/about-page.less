@@ -13,6 +13,51 @@
         }
     }
 
+    #splitfounded{
+        margin: 2%;
+        line-height: 1.5;
+
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+    }
+
+    #features{
+        margin: 2%;
+        line-height: 1.5;
+
+        h1{
+            font-size: 5rem;
+            text-align: center;
+            padding-bottom: 3%;
+        }
+    }
+
+    .lists{
+        display: flex;
+        justify-content: space-between;
+
+        .current-features-list, .coming-soon-feat-list{
+            width: 48%;
+
+            h3{
+                font-size: 4rem;
+            }
+
+            ul{
+                list-style-type: square;
+                margin-left: 3%;
+
+                li{
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
 
     #meet-the-team-container{
         display: flex;
@@ -37,6 +82,9 @@
                 border: 3px solid black;
                 border-radius: 5px;
                 line-height: 1.2;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
 
                 h2{
                     font-size: 3rem;
@@ -44,13 +92,20 @@
                 h3{
                     font-size: 2rem;
                 }
+                img{
+                    width: 100%;;
+                }
             }
         }
+    }
+
+    .fab{
+        text-align: center;
     }
 
     .fa-github-square{
         color: darkolivegreen;
         font-size: 4rem;
+        padding-left: 40%;
     }
-
 }
