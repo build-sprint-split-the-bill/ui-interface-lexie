@@ -519,13 +519,35 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container-home .lists {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
 .container-home .lists .current-features-list,
 .container-home .lists .coming-soon-feat-list {
   width: 48%;
 }
+@media (max-width: 500px) {
+  .container-home .lists .current-features-list,
+  .container-home .lists .coming-soon-feat-list {
+    width: 90%;
+    padding-left: 5%;
+    margin: 3%;
+  }
+}
 .container-home .lists .current-features-list h3,
 .container-home .lists .coming-soon-feat-list h3 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .container-home .lists .current-features-list h3,
+  .container-home .lists .coming-soon-feat-list h3 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+  }
 }
 .container-home .lists .current-features-list ul,
 .container-home .lists .coming-soon-feat-list ul {
@@ -535,6 +557,7 @@ footer {
 .container-home .lists .current-features-list ul li,
 .container-home .lists .coming-soon-feat-list ul li {
   font-size: 2rem;
+  line-height: 1.5;
 }
 .container-home #meet-the-team-container {
   display: flex;
@@ -552,6 +575,11 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container-home #meet-the-team-container .team-intros {
+    flex-wrap: wrap;
+  }
+}
 .container-home #meet-the-team-container .team-intros .project-lead,
 .container-home #meet-the-team-container .team-intros .ui-1,
 .container-home #meet-the-team-container .team-intros .ui-2,
@@ -566,6 +594,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-content: center;
+  background-color: burlywood;
+}
+@media (max-width: 500px) {
+  .container-home #meet-the-team-container .team-intros .project-lead,
+  .container-home #meet-the-team-container .team-intros .ui-1,
+  .container-home #meet-the-team-container .team-intros .ui-2,
+  .container-home #meet-the-team-container .team-intros .react1,
+  .container-home #meet-the-team-container .team-intros .react2-1,
+  .container-home #meet-the-team-container .team-intros .react2-2,
+  .container-home #meet-the-team-container .team-intros .backend {
+    width: 45%;
+    margin: 2%;
+  }
 }
 .container-home #meet-the-team-container .team-intros .project-lead h2,
 .container-home #meet-the-team-container .team-intros .ui-1 h2,
@@ -574,7 +615,52 @@ footer {
 .container-home #meet-the-team-container .team-intros .react2-1 h2,
 .container-home #meet-the-team-container .team-intros .react2-2 h2,
 .container-home #meet-the-team-container .team-intros .backend h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 2%;
+}
+@media (max-width: 1037px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h2,
+  .container-home #meet-the-team-container .team-intros .ui-1 h2,
+  .container-home #meet-the-team-container .team-intros .ui-2 h2,
+  .container-home #meet-the-team-container .team-intros .react1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-2 h2,
+  .container-home #meet-the-team-container .team-intros .backend h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 830px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h2,
+  .container-home #meet-the-team-container .team-intros .ui-1 h2,
+  .container-home #meet-the-team-container .team-intros .ui-2 h2,
+  .container-home #meet-the-team-container .team-intros .react1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-2 h2,
+  .container-home #meet-the-team-container .team-intros .backend h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h2,
+  .container-home #meet-the-team-container .team-intros .ui-1 h2,
+  .container-home #meet-the-team-container .team-intros .ui-2 h2,
+  .container-home #meet-the-team-container .team-intros .react1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-2 h2,
+  .container-home #meet-the-team-container .team-intros .backend h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h2,
+  .container-home #meet-the-team-container .team-intros .ui-1 h2,
+  .container-home #meet-the-team-container .team-intros .ui-2 h2,
+  .container-home #meet-the-team-container .team-intros .react1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-1 h2,
+  .container-home #meet-the-team-container .team-intros .react2-2 h2,
+  .container-home #meet-the-team-container .team-intros .backend h2 {
+    font-size: 2.5rem;
+  }
 }
 .container-home #meet-the-team-container .team-intros .project-lead h3,
 .container-home #meet-the-team-container .team-intros .ui-1 h3,
@@ -583,7 +669,41 @@ footer {
 .container-home #meet-the-team-container .team-intros .react2-1 h3,
 .container-home #meet-the-team-container .team-intros .react2-2 h3,
 .container-home #meet-the-team-container .team-intros .backend h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+@media (max-width: 830px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h3,
+  .container-home #meet-the-team-container .team-intros .ui-1 h3,
+  .container-home #meet-the-team-container .team-intros .ui-2 h3,
+  .container-home #meet-the-team-container .team-intros .react1 h3,
+  .container-home #meet-the-team-container .team-intros .react2-1 h3,
+  .container-home #meet-the-team-container .team-intros .react2-2 h3,
+  .container-home #meet-the-team-container .team-intros .backend h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 640px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h3,
+  .container-home #meet-the-team-container .team-intros .ui-1 h3,
+  .container-home #meet-the-team-container .team-intros .ui-2 h3,
+  .container-home #meet-the-team-container .team-intros .react1 h3,
+  .container-home #meet-the-team-container .team-intros .react2-1 h3,
+  .container-home #meet-the-team-container .team-intros .react2-2 h3,
+  .container-home #meet-the-team-container .team-intros .backend h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .container-home #meet-the-team-container .team-intros .project-lead h3,
+  .container-home #meet-the-team-container .team-intros .ui-1 h3,
+  .container-home #meet-the-team-container .team-intros .ui-2 h3,
+  .container-home #meet-the-team-container .team-intros .react1 h3,
+  .container-home #meet-the-team-container .team-intros .react2-1 h3,
+  .container-home #meet-the-team-container .team-intros .react2-2 h3,
+  .container-home #meet-the-team-container .team-intros .backend h3 {
+    font-size: 2rem;
+  }
 }
 .container-home #meet-the-team-container .team-intros .project-lead img,
 .container-home #meet-the-team-container .team-intros .ui-1 img,

@@ -40,11 +40,28 @@
         display: flex;
         justify-content: space-between;
 
+        @media @mobile {
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+
         .current-features-list, .coming-soon-feat-list{
             width: 48%;
 
+            @media @mobile {
+                width: 90%;
+                padding-left: 5%;
+                margin: 3%;
+            }
+
             h3{
                 font-size: 4rem;
+
+                @media @mobile {
+                    font-size: 3rem;
+                    margin-bottom: 2%;
+                }
             }
 
             ul{
@@ -53,6 +70,7 @@
 
                 li{
                     font-size: 2rem;
+                    line-height: 1.5;
                 }
             }
 
@@ -75,7 +93,10 @@
         .team-intros{
             display: flex;
             justify-content: space-between;
-            //align-content: space-between;
+
+            @media @mobile {
+                flex-wrap: wrap;
+            }
 
             .project-lead, .ui-1, .ui-2, .react1, .react2-1, .react2-2, .backend{
                 width: 13%;
@@ -85,12 +106,48 @@
                 display: flex;
                 flex-direction: column;
                 align-content: center;
+                background-color: burlywood;
+
+                @media @mobile {
+                    width: 45%;
+                    margin: 2%;
+                }
 
                 h2{
-                    font-size: 3rem;
+                    font-size: 2.5rem;
+                    padding: 2%;
+
+                    @media (max-width: 1037px) {
+                        font-size: 2rem;
+                    }
+
+                    @media (max-width: 830px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media (max-width: 640px) {
+                        font-size: 1.2rem;
+                    }
+
+                    @media @mobile {
+                        font-size: 2.5rem;
+                    }
                 }
                 h3{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                    padding: 2%;
+
+                    @media (max-width: 830px) {
+                        font-size: 1.25rem;
+                    }
+
+                    @media (max-width: 640px) {
+                        font-size: 1.1rem;
+                    }
+
+                    @media @mobile {
+                        font-size: 2rem;
+                    }
                 }
                 img{
                     width: 100%;;
