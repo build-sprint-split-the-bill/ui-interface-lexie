@@ -1,0 +1,198 @@
+// Home Content
+
+.home {
+
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid @border-color;
+
+    .lepigeonheaderimg{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    img{
+      width: 100%;
+
+      @media @mobile {
+        border-radius: 5px;
+      }
+    }
+
+    .introtosplit{
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+      p{
+        font-size: 2rem;
+      }
+    }
+
+    h2 {
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 5%;
+      font-size: 4.5rem;
+
+      position: relative;
+      /** text-transform: uppercase; **/
+      letter-spacing: 4px;
+      overflow: hidden;
+      background: linear-gradient(90deg, darkolivegreen, goldenrod, forestgreen);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animate 5s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
+
+
+    p {
+      padding:0 15px;
+    }
+  
+  }
+
+  .whySplit{
+    margin-bottom: 5%;
+    margin-top: -5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    p{
+      font-size: 2rem;
+    }
+
+    // button{
+    //   display: flex;
+    //   justify-content: center;
+    //   .custom-butt(@bg-color: #22283A, @width: 100px, @txt-color: white);
+    //   font-family: 'Noticia Text', serif;
+
+    //   @media @mobile {
+    //     .custom-butt(@bg-color: #22283A, @width: 467.5px, @txt-color: white);
+    //     height: 70px;
+    //     border-radius: 5px;
+    //   }
+    // }
+  }
+
+  //this is for the animation for the WHY SPLIT header
+
+  html, body{
+    height: 100%;
+    font-weight: 800;
+  }
+  
+  body{
+    background: #030321;
+    font-family: @font-general;
+  }
+  
+  svg {
+      display: block;
+      font: 10.5em @font-header;
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+    stroke: darkolivegreen;
+    animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+    stroke: springgreen;
+    animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+    stroke: seagreen;
+    animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+    stroke: goldenrod;
+    animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+    stroke: olivedrab;
+    animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+  }
+
+
+
+// styling for carousel slide show
+  html,body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1%;
+    border-top: 1px solid @border-color;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-wrapper {
+    width: 60%;
+    position: relative;
+  }
+  
+  .slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 3s linear;
+  }
+  
+  .slider-wrapper > .slide:first-child {
+    opacity: 1;
+  }
+
+footer{
+  margin-top: 40%;
+  border-top: 1px solid @border-color;
+}
+
+}//home
