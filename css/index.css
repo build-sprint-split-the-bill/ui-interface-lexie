@@ -483,3 +483,20 @@ footer {
 .home footer {
   margin-top: 40%;
 }
+.container-home .intro {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+.container-home .intro img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container-home .intro img {
+    border-radius: 5px;
+  }
+}
+.container-home .fa-github-square {
+  color: darkolivegreen;
+  font-size: 4rem;
+}
