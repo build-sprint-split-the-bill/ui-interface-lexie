@@ -14,7 +14,7 @@
 
   <script src="https://kit.fontawesome.com/ca08e59ea1.js" crossorigin="anonymous"></script> <!--for icon-->
 
-  <audio controls autoplay loop>
+  <audio class="music" controls autoplay loop>
     <source src="mp3/bensound-thejazzpiano.mp3" type="audio/mpeg">
   </audio>
 
@@ -99,9 +99,10 @@
     </div>	
     <footer>
       <p><i class="far fa-copyright"></i> Split 2019 // Music Courtesy of Bensounds.com //  </p>
-      <i class="fas fa-volume-mute" onclick="document.getElementById('music').pause()" ></i>
     </footer>
-
+    <div class="mute">
+        <img src="img/mute.png" onclick="document.getElementById('music').pause()" />
+    </div>
   </div>
 </body>
 </html>
