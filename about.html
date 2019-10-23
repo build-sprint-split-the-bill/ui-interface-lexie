@@ -12,14 +12,17 @@
   <link href="css/index.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/ca08e59ea1.js" crossorigin="anonymous"></script> <!--for icon-->
-
+  
+  <audio id="music" controls autoplay loop>
+    <source src="mp3/bensound-thejazzpiano.mp3" type="audio/mpeg">
+  </audio>
+  
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-
  <!-- navigation code here -->
   <section class="nav-container">
     <div class="nav-content">
@@ -38,63 +41,111 @@
       </div>
     </div>
   </section>
-
-  <div class="container home">
-
+  <div class="container-home">
     <header class="intro">
-       <!-- image code here -->
-      <div class="lepigeonheaderimg">
-        <img src="img/Le Pigeon Restaurant.jpg">
-      </div>
-      <div class="introtosplit">
-        <h2>Splitting the Bill</h2>
-        <p>Figuring out how to split the bill has never been easier. Split is here to help you keep track of who owes you money for that last trip to that new Tapas bar or French tasting menu restaraunt. A one-stop app that allows you to charge your friends an even split of the bill. We have partnered with many local restaurants in major metropolises around the US. We have launched in Los Angeles, Portland, Seattle, and New York so far.</p>
+      <div class="headerimage">
+        <img src="img/foie gras profiterole.jpg" alt="foie gras profiterole pdx le pigeon">
       </div>
     </header>
-
-    <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+    <hr>
+    <section id="splitfounded">
+      <div class="founded">
+        <h1>Founded</h1>
+        <p>When we get together with friends at a restaurant, it's nice to be able to make things easier on the server not split the bill.  This app allows you to pay the bill then send an amount due to your friends.</p>
+        <br>
+        <p>We banded together to make things simple. We want to provide you ease of mind when it comes to social outings, placing all your concerns into how many calories you're eating and how many hours you'll need to burn all the calories off. All praise carbs and dairy.</p>
+      </div>
     </section>
-   
-
-
-
-    <section class="whySplit">
-     
-      <h3>Why SPLIT?</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
-    </section>
-    
-    <section class="walk">
-      <div class="walk-text">
-        <h3>Let's Go For A Walk</h3>
-
-        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
-        <div class="btn">
-          <form action="sign-up.html">
-            <button onclick="sign-up.html">Sign Up</button>
-        </form>
+    <hr>
+    <section id="features">
+      <div class="feat-header">
+        <h1>Split App Features</h1>
+      </div>
+      <div class="lists">
+        <div class="current-features-list">
+          <h3>Current Features:</h3>
+          <ul>
+            <li>Onboarding process for users</li>
+            <li>Ability for an Organizer to invite other users (via username, email, phone, etc) to the "table" to split the bill with.</li>
+            <li>The organizer enters the total amount due and it's split evenly across everyone at the table</li>
+            <li> When the friend pays their part to the payor, the payor can mark it as paid and it's reflected on both of their profiles</li>
+          </ul>
+        </div>
+        <div class="coming-soon-feat-list">
+          <h3>Features Coming Soon:</h3>
+          <ul>
+            <li>The organizer can enter a specific amount due for each of thier friends, but the app will alert them of they are asking for more than the total amount due.</li>
+            <li> Create a way to send an invite email or text to friends at the table that are not yet signed up for the app.</li>
+          </ul>
         </div>
       </div>
-      
-      <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
-      </div>
-
     </section>
-
+    <hr>
+    <section id="meet-the-team-container">
+      <div class="meet-header">
+        <h1>Meet the Team</h1>
+      </div>
+      <div class="container-for-members">
+        <div class="team-intros">
+          <div class="project-lead">
+            <h2>Mackenzie<br>Weber</h2>
+            <h3>Project Lead</h3>
+            <img src="img/Mack.jpg">
+            <a href="https://github.com/MWeberLambdaweb19"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+          <div class="ui-1">
+            <h2>Lexie<br>Jiang</h2>
+            <h3>Web UI Developer</h3>
+            <img src="img/lexie.jpg">
+            <a href="https://github.com/jiangeyre"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+          <div class="ui-2">
+            <h2>Miguel<br>Nicolas</h2>
+            <h3>Web UI Developer</h3>
+            <img src="img/Miguel.png">
+            <a href="https://github.com/miguelqnicolas"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+          <div class="react1">
+            <h2>Michael<br>Jordan</h2>
+            <h3>Web React 1</h3>
+            <img src="img/MJ.jpg">
+            <a href="https://github.com/Insurikai"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+          <div class="react2-1">
+            <h2>Bayron<br>Puac</h2>
+            <h3>Web React 2</h3>
+            <img src="img/Bayron.jpg">
+            <a href="https://github.com/bayronpuac"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+          <div class="react2-2">
+            <h2>Chazaray<br>Robinson</h2>
+            <h3>Web React 2</h3>
+            <img src="img/Chaz.jpg">
+            <a href="https://github.com/cjrobinson831"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+          <div class="backend">
+            <h2>Zachary<br>Peasley</h2>
+            <h3>Backend Dev</h3>
+            <img src="img/Zach.png">
+            <a href="https://github.com/zpallday"><i class="fab fa-github-square"></i></a>
+            <!--icon for github with link to github-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
     <footer>
-      <p><i class="far fa-copyright"></i> Split 2019</p>
+      <p><i class="far fa-copyright"></i> Split 2019 // Music Courtesy of Bensounds.com //  </p>
     </footer>
-
+    <div class="mute">
+        <img src="img/mute.png" onclick="document.getElementById('music').pause()" />
+    </div>
   </div>
 </body>
 </html>

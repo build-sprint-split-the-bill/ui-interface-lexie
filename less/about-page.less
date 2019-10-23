@@ -1,0 +1,184 @@
+audio{
+    display: none;
+}
+
+.container-home{
+    .intro{
+        .padding-top();
+        display: flex;
+        justify-content: center; 
+
+        img{
+            width: 100%;
+
+            @media @mobile {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    #splitfounded{
+        margin: 2%;
+        line-height: 1.5;
+
+        h1{
+            font-size: 5rem;
+            .centering();
+            margin-bottom: 1%;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+    }
+
+    #features{
+        margin: 2%;
+        line-height: 1.5;
+
+        h1{
+            font-size: 5rem;
+            .centering();
+            padding-bottom: 3%;
+        }
+    }
+
+    .lists{
+        display: flex;
+        justify-content: space-between;
+
+        @media @mobile {
+            .custom-layout(column, center, center);
+            // flex-direction: column;
+            // align-content: center;
+            // justify-content: center;
+        }
+
+        .current-features-list, .coming-soon-feat-list{
+            width: 48%;
+
+            @media @mobile {
+                width: 90%;
+                padding-left: 5%;
+                margin: 3%;
+            }
+
+            h3{
+                font-size: 4rem;
+
+                @media @mobile {
+                    font-size: 3rem;
+                    margin-bottom: 2%;
+                }
+            }
+
+            ul{
+                list-style-type: square;
+                margin-left: 3%;
+
+                li{
+                    font-size: 2rem;
+                    line-height: 1.5;
+                }
+            }
+
+        }
+    }
+
+    #meet-the-team-container{
+        display: flex;
+        .custom-layout(column, center, center);
+        // flex-direction: column;
+        // justify-content: center;
+        // align-content: center;
+
+        h1{
+            .centering();
+            margin-top: 2%;
+            margin-bottom: 2%;
+            font-size: 4rem;
+        }
+        
+        .team-intros{
+            display: flex;
+            justify-content: space-between;
+
+            @media @mobile {
+                flex-wrap: wrap;
+            }
+
+            .project-lead, .ui-1, .ui-2, .react1, .react2-1, .react2-2, .backend{
+                width: 13%;
+                border: 3px solid black;
+                border-radius: 5px;
+                line-height: 1.2;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                background-color: burlywood;
+
+                @media @mobile {
+                    width: 45%;
+                    margin: 2%;
+                }
+
+                h2{
+                    font-size: 2.5rem;
+                    padding: 2%;
+
+                    @media (max-width: 1037px) {
+                        font-size: 2rem;
+                    }
+
+                    @media (max-width: 830px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media (max-width: 640px) {
+                        font-size: 1.2rem;
+                    }
+
+                    @media @mobile {
+                        font-size: 2.5rem;
+                    }
+                }
+                h3{
+                    font-size: 1.5rem;
+                    padding: 2%;
+
+                    @media (max-width: 830px) {
+                        font-size: 1.25rem;
+                    }
+
+                    @media (max-width: 640px) {
+                        font-size: 1.1rem;
+                    }
+
+                    @media @mobile {
+                        font-size: 2rem;
+                    }
+                }
+                img{
+                    width: 100%;;
+                }
+            }
+        }
+    }
+
+    .fab{
+        .centering();
+    }
+
+    .fa-github-square{
+        color: darkolivegreen;
+        font-size: 4rem;
+        padding-left: 40%;
+    }
+
+    .mute{
+        .centering();
+        
+        img{
+            width: 2%;
+        }
+    }
+}

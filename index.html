@@ -14,6 +14,10 @@
 
   <script src="https://kit.fontawesome.com/ca08e59ea1.js" crossorigin="anonymous"></script> <!--for icon-->
 
+  <audio id="music" controls autoplay loop>
+    <source src="mp3/bensound-thejazzpiano.mp3" type="audio/mpeg">
+  </audio>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -50,8 +54,12 @@
       <div class="introtosplit">
         <h2>Splitting the Bill</h2>
         <p>Figuring out how to split the bill has never been easier. Split is here to help you keep track of who owes you money for that last trip to that new Tapas bar or French tasting menu restaraunt. A one-stop app that allows you to charge your friends an even split of the bill. We have partnered with many local restaurants in major metropolises around the US. We have launched in Los Angeles, Portland, Seattle, and New York so far.</p>
+        <div class="sign-up-butt">
+          <button>Sign Up!</button>
+        </div>
       </div>
     </header>
+    <hr>
     <section class="whySplit">
         <div>
             <svg viewBox="0 0 960 300">
@@ -73,12 +81,11 @@
           <br>
           <p>SPLIT is here to help you solve your problems and prevent any possible friendship rifts that might come across just because Millenials are that forgetful. When the one person who pays the bill logs in to the app. you will be prompted to add the friends who were at the meal into the bill. The local restaurants that are working with SPLIT will have electronically sent the payee the bill already and our app will calculate the split bill evenly for all members of the party. The friends will be notified immedaitely to 'OK' this transaction and money will be pulled out of their bank accounts directly to be sent to the friend who had paid. There will be daily reminders to those who have yet to pay back their friends to ensure that money is sent in a prompt manner, preventing any awkward interactions for any future group hangouts.</p>
       </div>
-      <!-- <div class="button">
-          <button>Sign Up!</button>
-      </div> -->
+      <div class="log-in-butt">
+          <button>Log In!</button>
+      </div>
     </section>
-
-
+    <hr>
     <div class="slider" id="main-slider"><!-- outermost container element -->
       <div class="slider-wrapper"><!-- innermost wrapper element -->
         <img src='img/tuskexterior.jpg' alt="First" class="slide" />
@@ -90,11 +97,12 @@
         <img src='img/le pigeon burger.jpg' alt="Seventh" class="slide" />
       </div>
     </div>	
-
     <footer>
-      <p><i class="far fa-copyright"></i> Split 2019</p>
+      <p><i class="far fa-copyright"></i> Split 2019 // Music Courtesy of Bensounds.com //  </p>
     </footer>
-
+    <div class="mute">
+        <img src="img/mute.png" onclick="document.getElementById('music').pause()" />
+    </div>
   </div>
 </body>
 </html>

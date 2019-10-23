@@ -11,15 +11,12 @@
     @media @mobile {
         max-width: 100%;
         padding-top: 2%;
+        padding-bottom: 3%;
     }
 
     .nav-logo{
         .padding-top();
         font-size: 4rem;
-
-        @media @mobile {
-            font-size: 4.5rem;
-        }
 
         h1{
             background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
@@ -31,6 +28,14 @@
             font-size: 12rem;
             line-height: .75;
             margin: 10px 0;
+
+            @media @tablet {
+                font-size: 10rem;
+            }
+
+            @media @mobile {
+                font-size: 8rem;
+            }
         }
 
     }
@@ -44,8 +49,14 @@
             justify-content: space-between;
             align-items: center;
 
+            @media @tablet {
+                width: 50%;
+                padding-bottom: 3%;
+            }
+
             @media @mobile {
-                width: 80%;
+                padding-top: 3%;
+                width: 70%;
                 padding-bottom: 2%;
             }
 
@@ -54,6 +65,14 @@
                 color: @ebony-clay;
                 font-family: @font-header;
                 font-size: 2.5rem;
+
+                @media @tablet {
+                    font-size: 1.5rem;
+                }
+
+                @media @mobile {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
