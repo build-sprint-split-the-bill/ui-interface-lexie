@@ -224,14 +224,19 @@ hr {
 }
 @media (max-width: 768px) {
   .nav-container .nav-bar nav {
-    width: 50%;
+    width: 70%;
     padding-bottom: 3%;
+  }
+}
+@media (max-width: 570px) {
+  .nav-container .nav-bar nav {
+    width: 75%;
   }
 }
 @media (max-width: 500px) {
   .nav-container .nav-bar nav {
     padding-top: 3%;
-    width: 70%;
+    width: 80%;
     padding-bottom: 2%;
   }
 }
@@ -243,7 +248,12 @@ hr {
 }
 @media (max-width: 768px) {
   .nav-container .nav-bar nav a {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 770px) {
+  .nav-container .nav-bar nav a {
+    font-size: 1.75rem;
   }
 }
 @media (max-width: 500px) {
